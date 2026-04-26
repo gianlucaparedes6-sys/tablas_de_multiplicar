@@ -2,7 +2,7 @@ function generarTablas() {
 
     let contenedor = document.getElementById("contenedor");
 
-    let numero = 5;   // ← aquí cambias la tabla
+    let numero = parseInt(document.getElementById("txtTabla").value) || 5;   // ← aquí cambias la tabla
 
     let contenido = "";
 

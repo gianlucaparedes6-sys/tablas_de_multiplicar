@@ -149,3 +149,76 @@ footer{
     color:#00eaff;
     font-weight:bold;
 }
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.caja-texto{
+    width:130px;
+    padding:8px 12px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    font-size:13px;
+    color:white;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(0,234,255,0.25);
+    box-shadow:0 0 8px rgba(0,234,255,0.08);
+}
+
+.caja-texto::placeholder{
+    color:#b8d7e0;
+}
+
+.caja-texto:focus{
+    border:1px solid #00eaff;
+    box-shadow:0 0 10px rgba(0,234,255,0.35);
+}
+header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.panel-ayuda{
+    text-align:center;
+}
+
+.panel-ayuda h2{
+    font-size:1rem;
+    color:#00eaff;
+    margin-bottom:4px;
+}
+
+.panel-ayuda p{
+    font-size:12px;
+    color:#d9ecf2;
+}
+
+.caja-texto{
+    width:180px;
+    padding:8px 12px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    font-size:13px;
+    color:white;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(0,234,255,0.25);
+    text-align:center;
+}
+
+.caja-texto::placeholder{
+    color:#b8d7e0;
+}
+
+.mensaje-ayuda{
+    font-size:11px;
+    color:#9fd9e5;
+}

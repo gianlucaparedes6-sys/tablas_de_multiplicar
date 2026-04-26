@@ -11,10 +11,30 @@
     
 
     <main>
-        <h1>Tabla del 3</h1>
-        <header>
-       <button class="btn-probar" id="btnProbar" onclick="generarTablas()">PROBAR</button>
-        </header>
+        
+       <header>
+
+    <div class="panel-ayuda">
+        <h2>Generador de Tablas</h2>
+        <p>Escribe un número y presiona <strong>PROBAR</strong> para ver su tabla de multiplicar.</p>
+    </div>
+
+    <input 
+        type="number"
+        id="txtTabla"
+        class="caja-texto"
+        placeholder="Ejemplo: 5"
+    >
+
+    <button class="btn-probar" id="btnProbar" onclick="generarTablas()">
+        PROBAR
+    </button>
+
+    <small class="mensaje-ayuda">
+        Ingresa cualquier número mayor a 0.
+    </small>
+
+</header>
 
         <div class="tabla-container" id="contenedor">
             <div class="tabla-titulo">
