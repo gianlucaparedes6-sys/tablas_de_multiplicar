@@ -8,38 +8,35 @@
 </head>
 <body>
 
-    <header>
-        <button class="btn-probar">PROBAR</button>
-    </header>
+    
 
     <main>
         <h1>Tabla del 3</h1>
+        <header>
+       <button class="btn-probar" id="btnProbar" onclick="generarTablas()">PROBAR</button>
+        </header>
 
-        <div class="tabla-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Operación</th>
-                        <th>Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>3 x 1</td><td>3</td></tr>
-                    <tr><td>3 x 2</td><td>6</td></tr>
-                    <tr><td>3 x 3</td><td>9</td></tr>
-                    <tr><td>3 x 4</td><td>12</td></tr>
-                    <tr><td>3 x 5</td><td>15</td></tr>
-                    <tr><td>3 x 6</td><td>18</td></tr>
-                    <tr><td>3 x 7</td><td>21</td></tr>
-                    <tr><td>3 x 8</td><td>24</td></tr>
-                    <tr><td>3 x 9</td><td>27</td></tr>
-                    <tr><td>3 x 10</td><td>30</td></tr>
-                </tbody>
-            </table>
+        <div class="tabla-container" id="contenedor">
+            <div class="tabla-titulo">
+    <div>Operación</div>
+    <div>Resultado</div>
+</div>
+
+<div class="item">3 x 1 <span>3</span></div>
+<div class="item">3 x 2 <span>6</span></div>
+<div class="item">3 x 3 <span>9</span></div>
+<div class="item">3 x 4 <span>12</span></div>
+<div class="item">3 x 5 <span>15</span></div>
+<div class="item">3 x 6 <span>18</span></div>
+<div class="item">3 x 7 <span>21</span></div>
+<div class="item">3 x 8 <span>24</span></div>
+<div class="item">3 x 9 <span>27</span></div>
+<div class="item">3 x 10 <span>30</span></div>
         </div>
     </main>
 <footer>
     Realizado por : Gianluca Paredes
 </footer>
+<script src="multiplicar.js"></script>
 </body>
 </html>
