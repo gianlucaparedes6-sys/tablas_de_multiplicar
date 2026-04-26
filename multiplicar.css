@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    min-height:100vh;
+    background: linear-gradient(135deg,#050816,#0b1120,#111827);
+    color:white;
+    padding:12px;
+}
+
+/* Encabezado */
+header{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+/* Botón futurista */
+.btn-probar{
+    padding:14px 32px;
+    font-size:16px;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    color:white;
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+    box-shadow:0 0 15px rgba(0,198,255,0.6);
+    transition:0.3s;
+}
+
+.btn-probar:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 0 25px rgba(0,198,255,0.9);
+}
+
+/* Contenedor principal */
+.contenedor{
+    max-width:700px;
+    margin:auto;
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 25px rgba(0,0,0,0.4);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    font-size:1.1rem;
+    color:#00eaff;
+    text-shadow:0 0 10px rgba(0,234,255,0.7);
+}
+
+/* Tabla */
+.tabla-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+th{
+    background: linear-gradient(90deg,#00c6ff,#0072ff);
+    padding:10px;
+    font-size:17px;
+}
+
+td{
+    padding:9px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+tbody tr{
+    transition:0.3s;
+}
+
+tbody tr:nth-child(even){
+    background: rgba(255,255,255,0.03);
+}
+
+tbody tr:hover{
+    background: rgba(0,234,255,0.12);
+    transform:scale(1.01);
+}
+
+/* Responsive */
+@media(max-width:600px){
+
+    .contenedor{
+        padding:18px;
+    }
+
+    h1{
+        font-size:1.5rem;
+    }
+
+    .btn-probar{
+        width:100%;
+    }
+
+    th,td{
+        font-size:14px;
+        padding:10px;
+    }
+}
+footer{
+    margin-top:20px;
+    text-align:right;
+    font-size:14px;
+    color:#00eaff;
+    opacity:0.9;
+    padding-right:5px;
+}
